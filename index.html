@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- js for geo chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Users'],
+          ['India', 800],
+          ['United States', 600],
+          ['Myanmar', 400],
+          ['pakistan', 500],
+          ['China', 600],
+          ['South Africa', 670]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <img src="./images/logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">home</a>
+            <a href="about.html">about</a>
+            <a href="https://research.pedalstart.com/">services</a>
+            <a href="review.html">review</a>
+            <!-- <a href="blogs.html">blogs</a> -->
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here..">
+            <label class="fas fa-search"></label>
+        </form>
+
+        <!-- shopping cart -->
+
+        <!-- <div class="shopping-cart">
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/cart-1.png" alt="">
+                <div class="content">
+                    <h3>Product 1</h3>
+                    <span class="price">$34.99/=</span>
+                    <span class="quantity"> qty: 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/cart-2.png" alt="">
+                <div class="content">
+                    <h3>Product 2</h3>
+                    <span class="price">$34.99/=</span>
+                    <span class="quantity"> qty: 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/cart-3.png" alt="">
+                <div class="content">
+                    <h3>Product 3</h3>
+                    <span class="price">$34.99/=</span>
+                    <span class="quantity"> qty: 1</span>
+                </div>
+            </div>
+
+            <div class="total">total : $59.99/=</div>
+            <a href="#" class="btn">checkout</a>
+
+        </div> -->
+
+        <!-- login -->
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="Your Email" class="box">
+            <input type="password" placeholder="Your Password" class="box">
+            <p>forget your password <a href="#"> click here</a></p>
+            <p>don't have an account? <a href="#"> create now</a></p>
+            <input type="submit" value="login" class="btn">
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>PedalStart</h3>
+            <p  style="color: white;">PedalStart is India’s fast growing startup founders’ community that works intensively with the startups in each phase of their journey. We have been transforming big ideas into high potential businesses.</p>
+            <a href="contact.html" class="btn">Signup</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+     <!-- offer section starts -->
+
+     <section class="offer">
+
+        <!-- <div class="heading">
+            <h3>our offer</h3>
+        </div> -->
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/community-service-icon-png-25.jpg" alt="">
+                <h3>Community</h3>
+                <p>Work On Entrepreneurial Mindset, Problem Statement/Opportunity Gap, Solutions, POC</p>
+            </div>
+
+            <div class="box">
+                <img src="images/15-512.webp" alt="">
+                <h3>Accelerator</h3>
+                <p>Work On Design Thinking Execution Approach, Viable Business Model, Expandable Model</p>
+            </div>
+
+            <div class="box">
+                <img src="images/fundraising-icon.png" alt="">
+                <h3>Funds Raising</h3>
+                <p>Work On Execution Viability Pitch Deck, Investors Ready, Potential Investors, Investors Meetups.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/45-1024.webp" alt="">
+                <h3>Investors</h3>
+                <p>Getting funded is a key component of startups' success and a core focus at Pedalstart. We know most investors, we know what they invest in and what gets them excited.</p>
+            </div>
+
+        </div>
+
+    </section>
+    
+    
+
+    <!-- offer section ends -->
+
+    <!-- banner section starts -->
+
+    <section class="banner-container">
+
+        <div class="banner">
+            <img src="images/q.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>Mentorship</h3>
+                <a href="#" class="btn"> Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="images/yyyyy.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>Bussiness Advice</h3>
+                <a href="#" class="btn"> Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="images/q2.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>Complete Plan</h3>
+                <a href="#" class="btn"> Enroll Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+    <div class="comm">
+        <h1 style="text-decoration: underline;">Community Power</h1>
+    </div>
+
+    <div class="geo" id="regions_div" style="width: 88vw; height: 5wh; padding: 0px 0px 0px 80px;"></div>
+
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>PedalStart</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 8224862565</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> garyanmishra452@gmail.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Bhopal, India</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+                <a href="#">my wishlist</a>
+                <a href="#">my account</a>
+                <a href="#">terms or use</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#">menu</a>
+                <a href="#">location</a>
+                <a href="#">events & promotions</a>
+                <a href="#">FAQs</a>
+                <a href="#">contact us</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest update</p>
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+                <img src="images/payment.png" class="payment" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>AryanMishra</span> | all rights reserved! </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
